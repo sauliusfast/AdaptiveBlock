@@ -14,6 +14,7 @@ header {
     padding: 0 80px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .left-header {
@@ -328,6 +329,39 @@ header {
     .menuHeaderLink3,
     .cardsPhone {
         font-size: 30px;
+    }
+
+    .wrapper6-cards {
+        flex-wrap: wrap;
+    }
+
+    .wrapper6-card1,
+    .wrapper6-card2,
+    .wrapper6-card3,
+    .wrapper6-card4 {
+        width: 50%;
+    }
+
+    .wrapper6-text {
+        display: block;
+        text-align: center;
+    }
+    
+    .wrapper6-text-left,
+    .wrapper6-text-right {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper6-card1-text,
+    .wrapper6-card2-text,
+    .wrapper6-card3-text,
+    .wrapper6-card4-text {
+        font-size: 40px;
+    }
+
+    .fa-chevron-right {
+        display: none;
     }
 
     .wrapper7-text {
