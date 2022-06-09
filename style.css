@@ -73,7 +73,6 @@ header {
 }
 
 .wrapper6 {
-    width: 1280px;
     margin: 0 80px;
     margin-bottom: 80px;
 }
@@ -102,7 +101,7 @@ header {
     justify-content: space-between;
     margin-bottom: 80px;
 }
-/* ------------------- card 1 ---------------- */
+
 .wrapper6-card1 {
     padding: 20px;
     background: #F7F7F7;
@@ -120,7 +119,7 @@ header {
 .wrapper6-card1-text {
     margin-bottom: 20px;
 }
-/* ------------------- card 1 ---------------- */
+
 .wrapper6-card2 {
     padding: 20px;
     background: #F7F7F7;
@@ -214,17 +213,17 @@ header {
     flex-wrap: wrap;
     gap: 20px
 }
-/* ВАЖНО - ТАК ВЫРАВНИВАЕТСЯ ЭЛЕМЕНТ (ФОТО) ВНУТРИ КОРОБКИ */
+
 .wrapper7-card1 {
     display:flex;
-    justify-content: center; /* по горизонтали */
-    align-items: center; /* по вертикали */
-    flex-direction: column; /* ставит див в колонку*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: #F7F7F7;
     border-radius: 5px;
-    width: 305px; /* размеры блока родителя */
-    height: 180px; /* размеры блока родителя */
-    overflow: hidden; /* если элемент больше блока-родителя – обрезаем лишнее */
+    width: 305px;
+    height: 180px; 
+    overflow: hidden;
 }
 
 .wrapper7-card2 {
@@ -335,11 +334,17 @@ header {
         flex-wrap: wrap;
     }
 
+    .wrapper6-card1, 
+    .wrapper6-card2, 
+    .wrapper6-card3, 
+    .wrapper6-card4 {
+        flex: 1;
+    }
+
     .wrapper6-card1,
     .wrapper6-card2,
-    .wrapper6-card3,
-    .wrapper6-card4 {
-        width: 50%;
+    .wrapper6-card3 {
+        margin-right: 20px;
     }
 
     .wrapper6-text {
@@ -369,15 +374,21 @@ header {
         font-size: 40px;
     }
 }
-/* -------- 960px HEADER----- */
 
+/* --------512 ---- */
 @media (max-width: 512px) {
     .logoHeader {
+        margin-left: 220px;
+        order: 1;
+    }
+
+    .logoHeader img {
         margin-right: 0;
     }
 
     .menuHeader {
         display: block;
+        order: 2;
     }
 
     .cardsHeader-box1,
@@ -396,8 +407,8 @@ header {
     .cardsHeader-box1,
     .cardsHeader-box2,
     .cardsHeader-box3 {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
 
     .wrapper7-card1,
@@ -427,6 +438,3 @@ header {
         flex-wrap: wrap;
     }    
 }
-
-
-
